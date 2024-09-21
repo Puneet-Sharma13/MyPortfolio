@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/4510b9e713.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Puneet. (1).png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>  
+        </nav>
+        <div class="header-text">
+          <p>Web developer</p>
+          <h1>Hey, I'm <span>Puneet</span><br>Sharma from India</h1> 
+        </div>
+      </div>
+    </div>
+    <!-----------------------about----------------------->
+    <div id="about">
+        <div class=" conatiner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bg1.png";>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a web developer, I specialize in creating and maintaining dynamic websites that seamlessly blend design and functionality. I am proficient in HTML, CSS, and JavaScript, enabling me to build responsive and user-friendly sites. My expertise includes web design, content development, client-side and server-side scripting, and network security configuration. I focus on delivering a cohesive user experience, ensuring that each website is visually appealing, highly functional, and meets the client's needs. I am committed to staying updated with the latest web technologies and best practices to provide innovative and efficient web solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July-2023</span><br>Solitaire Infosys</li>
+                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 10th</span><br>S.D. Adarsh Public School</li>
+                            <li><span>2021 - 12th</span><br>S.D. Adarsh Public School</li>
+                            <li><span>2021 - 2025</span><br>B.Tech - Chandigarh Engineering College</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------services----------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class=  "services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Experienced in creating visually appealing, responsive, and user-friendly websites using HTML, CSS, and JavaScript. Focused on delivering clean, functional designs that enhance user experience and brand alignment.
+                        <a href="#">Learn more</a>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------------------portfolio------------------------------>
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>RizzQuizz</h3>
+                        <p>YOu can check your knowledge various topics.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Gemini </h3>
+                        <p>You enjoy learning, adapting to new situations, and engaging in lively conversations.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>This app connect you to the whole world.download it form playstore.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------my contact----------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class= "sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sharmapuneet8733@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7419180696</p>
+                    <div class="social-icons">
+                        <a href=" "><i class="fa-brands fa-facebook"></i></a>
+                        <a href=" "><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/puneet_sharma_kk87/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/puneet-sharma-55a42821b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                        <a href="Puneet.resume.pdf" download class="btn">Download Resume</a> 
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" Name="Name" placeholder="Your Name" required>
+                        <input type="email" Name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Puneet Sharma made with <i class="fas fa-heart"></i> by three tales </p>
+        </div>
+    </div>
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    const scrollPosition = window.scrollY;
+    const maxScroll = 500; // Adjust this value based on when you want the image to be fully hidden
+    const scrollRatio = Math.min(scrollPosition / maxScroll, 1);
+    
+    const newSize = 100 - (scrollRatio * 50); // Reduces the background size by up to 50%
+    const newOpacity = 1 - scrollRatio; // Reduces the opacity to 0
+
+    header.style.backgroundSize = `${newSize}%`;
+    header.style.opacity = newOpacity;
+});
+
+    </script>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGusOTxd8-z1o36lv7naGy34g5OedekcOa8NNEj7PPmQ0xaMEaTTc1AZfn1cER_vls/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
